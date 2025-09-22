@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador LL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Analizador LL</h1>
+        <div id="menu">
+            <button onclick="showInputForm()">1. Introducir reglas de la gramática</button>
+            <button onclick="checkAndEliminateRecursion()">2. Verificar y eliminar recursión izquierda</button>
+            <button onclick="checkAndEliminateAmbiguity()">3. Verificar y eliminar ambigüedad</button>
+            <button onclick="calculateFirstSets()">4. Calcular conjuntos First</button>
+            <button onclick="calculateFollowSets()">5. Calcular conjuntos Follow</button>
+            <button onclick="buildLLTable()">6. Construir tabla LL</button>
+            <button onclick="analyzeString()">7. Analizar cadena de entrada</button>
+            <button onclick="exitProgram()">8. Salir</button>
+        </div>
+        <div id="content"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
